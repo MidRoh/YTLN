@@ -1,0 +1,35 @@
+<div  ng-controller="TvCtrl">
+    <div class ="row">
+	    <div class = "col-lg-6 col-lg-offset-1">
+	    	<div class="panel panel-default">
+	    		<div class="panel-body" id="ytVideo">
+                    <iframe src="{{path}}" frameborder="1"></iframe>
+                    <hr />
+                    <div class ="row">
+                        <div class="col-lg-3">
+	    			    	<div class="col-lg-1">
+	    			    		<button ng-click="channelUp()" class="btn-info"><img src="assets/icons/glyphicons-601-chevron-up.png" alt="Channel Up"></button>
+	    			    	</div>
+	    			    	<div class="col-lg-1 pull-right">
+	    			    		<button ng-click="channelDown()" class="btn-info"><img src="assets/icons/glyphicons-602-chevron-down.png" alt="Channel Down"></button>
+	    			    	</div>
+	    	
+	    			    </div>
+                   </div>
+                   <div class="row">
+                   		<div class="col-lg-5">	
+                            <div class="col-lg-2 col-lg-offset-1"><br />				
+	    					    <div class="label label-default remotelbl">Channel</div>
+                            </div>								
+	    				</div>
+                       	<div class="col-lg-6">
+	    					<a href="/SimpleAngularApp/guide.html"><button class="btn-danger btn-large">Guide</button></a>
+	    					<a href="/SimpleAngularApp/dvr.html"><button class="btn-info btn-large">OnDemand</button></a>
+	    					<button class="btn-default btn-large">Info</button>	    					
+	    				</div>
+                   </div> 		
+	    		</div>             
+	    	</div>
+	    </div>
+    </div>
+</div>

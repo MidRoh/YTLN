@@ -1,0 +1,16 @@
+﻿<div class = "row">
+	<div class = "col-lg-8 col-lg-offset-1">
+        <div class="panel panel-primary">
+            <div class="panel panel-heading"><h3>Channel Guide</h3></div>
+            <div class="panel panel-body">
+		        <div ng-controller="GuideCtrl as guide"> 
+                    <div ng-repeat="bc in guide.broadcasts">       
+                       <a ng-click="loadBroadcast(bc.videoId)"  class="list-group-item" >
+                            <p><img src=" {{bc.thumb}}" alt ="" />| {{bc.title}} </p>
+		                </a>  
+                     </div>                
+		        </div>
+            </div>
+        </div>
+	</div>
+</div>
